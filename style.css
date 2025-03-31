@@ -1,0 +1,106 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Different background colors for each page */
+#index { background-color: #fdf8c9; }
+#data { background-color: #E1F5FE; }
+#summary { background-color: #EAD7F2; }
+
+header {
+    background-color: #2196F3;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #1976D2;
+}
+
+nav a {
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Styling for visualizations */
+
+iframe {
+    width: 100%;  /* 2/3 of the page width */
+    min-height: 525px;  /* Ensures all graphs have the same height */
+    border: none;
+    display: block;
+    margin: 20px auto;
+    background: white; /* Adds a consistent white background */
+    padding: 20px; /* Optional: Adds spacing to prevent graphs from touching edges */
+    box-sizing: border-box; /* Ensures padding doesn’t increase size */
+}
+
+    
+
+/* Rounded images for better aesthetics */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.Graph {
+    font-family: Arial, sans-serif; /* Consistent font */
+    font-size: 12px; /* Standard text size */
+    font-weight: bold; /* Make text bold */
+    fill: black; /* Default text color */
+    
+    /* Axis and labels */
+    text-anchor: middle; /* Center-align text */
+    
+    /* Stroke and colors */
+    stroke: none; /* No outline for text */
+    stroke-width: 0;
+    
+    /* Graph spacing */
+    margin: 20px; /* Space around graphs */
+    padding: 10px; /* Internal spacing */
+}
+
+.axis-label {
+    font-size: 14px; /* Adjust size as needed */
+    fill: black;
+    text-anchor: middle;
+}
+
+.activity-label {
+    font-size: 14px; /* Adjust size as needed */
+    fill: black; /* Ensure visibility */
+    text-anchor: middle;
+}
